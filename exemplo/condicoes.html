@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condições em java script</title>
+  </head>
+  <body>
+    <h2>Descubra se está na velociade correta.</h2>
+    <input type="number" id="txtV" />
+    <button id="enviar" onclick="calcular()">Enviar</button>
+    <div id="resultado"></div>
+    <script>
+      function calcular() {
+        var velo = window.document.getElementById("txtV");
+        var resultado = document.getElementById("resultado");
+        // teve que se criar essa variavel para jogar de string para numero
+        var vel = Number(velo.value);
+        resultado.innerHTML = `<p> Sua velocaidade é de: ${vel} km/h <p>`;
+        if (vel > 60) {
+          resultado.innerHTML += `<p> Você está acima da velocidade, você ira receber uma multa! <p>`;
+        } else {
+          resultado.innerHTML += `<p> Dirija com segurança! <p>`;
+        }
+      }
+    </script>
+  </body>
+</html>

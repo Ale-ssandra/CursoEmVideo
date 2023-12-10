@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(135, 246, 246, 0.645);
+    font-family: roboto ;
+    color: white;
+    text-align: center;
+    
+}
+section{
+    background-color: rgba(222, 211, 197, 0.505);
+    border-radius: 10px;
+    padding: 80px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.508);
+    
+}
+footer{
+    text-align: center;
+}
+#img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+}
+#horario{
+    margin-bottom: 15px;
+
+}

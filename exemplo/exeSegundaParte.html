@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudo de js no curso em video</title>
+  </head>
+  <body>
+    <div>
+      <h1>Somando numeros</h1>
+      <input type="number" id="n1" name="n1" /> +
+      <input type="number" id="n2" name="n2" />
+      <br />
+      <input type="button" value="Somar" name="soma" onclick="soma()" />
+    </div>
+    <div>
+      <h3 id="res">Resultado:</h3>
+    </div>
+    <script>
+      // pelo prompt
+      // var  n1 = Number( window.prompt("digite um numero"))
+      // var n2 = Number( window.prompt("digite outro numero"))
+      // var soma = n1 + n2
+      //   window.alert( "Os numeros fornecidos são " + n1 + " e " + n2 + " e soma será de: "+ soma)
+
+      function soma() {
+        var n1 = window.document.getElementById("n1");
+        var n2 = window.document.getElementById("n2");
+        var t1 = Number(n1.value);
+        var t2 = Number(n2.value);
+
+        var res = window.document.getElementById("res");
+
+        var soma = t1 + t2;
+        res.innerHTML = `A soma entre os numeros ${t1} e ${t2} é de: ${soma}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+      <h1>Verificador de idade</h1>
+   
+
+    <div id="container">
+      Ano de nascimento:
+      <input type="number" name="" id="anoNasc" min="0" />
+
+      <p>
+        Sexo:
+<!-- no input radio para somente ter uma opçao do que marcar voce tem sar checked e name tem ser o mesmo nome -->
+        <input type="radio" name="sex" id="mas" checked />
+        <label for="mas">Masculino</label>
+        <input type="radio" name="sex" id="fem" />
+        <label for="fem">Feminino</label>
+      </p>
+      <button value="verificar" onclick="verificar()">Verificar</button>
+      <h3 id="h3"></h3>
+    </div>
+   
+      <footer>Curso Java Script</footer>
+    
+  </body>
+  <script src="script.js"></script>
+</html>

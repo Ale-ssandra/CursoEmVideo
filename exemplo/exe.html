@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro programa</title>
+    <style>
+      body {
+        background-color: rgb(0, 243, 223);
+        color: white;
+        font-size: normal 20px;
+      }
+      div#area {
+        font-weight: 200;
+        background-color: rgb(26, 24, 92);
+        color: beige;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h1>
+        Ola, mundo!
+    </h1>
+    <p>Ola pessoal uiui</p> -->
+    <!-- <h1>Aprendendo usar o DOM</h1>
+    <p>Resultado</p>
+    <p>Clique em mim</p>
+    <div id="msg"> Exemplo por querySelector</div> -->
+    <div id="area">Eventos Dom</div>
+    <script>
+      // alert('Primeira mensagem')
+      // window.confirm('Esta gostando de java script?')
+      // para perguntar nome
+      //    var nome = window.prompt('Qual seu nome?')
+      //   window.alert('Ola,' + nome)
+
+      // var n1 = Number(window.prompt('Digite um numero'))
+      // var n2 = Number(window.prompt('Digite um numero'))
+      // // dessa forma so junta as variaveis
+      // // window.alert(n1+n2)
+      // var soma = n1 + n2
+      // window.alert(soma)
+
+      // typeof n1
+      //    var  nome =   window.prompt('qual seu nome ?')
+      //    document.write(`Seu nome tem ${nome.length} letras.`)
+      //    document.write(`Seu nome em maisculo: ${nome.toUpperCase()}`)
+
+      //document.write é para escrever na tela
+
+      //aula 09 DOM
+      // window.document.write("Ola Mundo")
+      // window.document.write(window.document.URL)
+
+      //este é tipo de seleçao de elementos no java script, 
+      //nesse ele vai pegar o nome da tag, onde dentro do parentese voce ira pegar qual tag voce quer usar e dentro [] selecionar a posiçao de qual tag que irar pegar , abaixo exemplos de como usados
+
+      // var corpo = window.document.body
+      // var p1 = window.document.getElementsByTagName('p')[0]
+      // window.document.write('Esta escrito assim ' + p1.innerText)
+      // p1.style.color= 'red'
+      // corpo.style.background = 'green'
+
+      // var d  = window.document.querySelector('div#msg')
+      // d.style.background = 'blue'
+
+      // Aula 10
+      // Eventos Dom
+
+      // essa variavel tem presta atençao onde ela esta,
+      // nessa posiçao ela esta global todas as funçoes vao acessar ela.
+      var a = window.document.getElementById("area");
+
+      // esse é jeito de acionar evento pelo java scritp, ai voce pode tirar do Html
+      a.addEventListener("click", clicar);
+      a.addEventListener("mouseenter", entrar);
+      a.addEventListener("mouseout", sair);
+      function clicar() {
+        //var a = window.document.getElementById('area')
+        // se ele estivesse aqui , somente a funçao 'clicar' que acessaria ela
+        a.innerText = "olaaaa";
+        a.style.backgroundColor = "yellow";
+        a.style.color = "blue";
+      
+      }
+
+      function entrar() {
+        a.innerText = "voce esta dentro";
+        a.style.backgroundColor = "green";
+      }
+      function sair() {
+        a.innerText = "Tchazinho!";
+       a.style.backgroundColor = "pink"
+      }
+    </script>
+  </body>
+</html>
